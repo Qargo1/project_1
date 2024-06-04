@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'montserrat-medium';
+  src: url('../fonts/montserrat_medium.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('../fonts/montserrat_bold.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url('../fonts/montserrat.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat-semibold';
+  src: url('../fonts/montserrat_semibold.ttf');
+}
+
+body {
+  margin: 0px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 111px 106px 486px 221px;
+  margin: 0px;
+  height: 302px;
+  width: 1440px;
+  background-color: rgba(41, 99, 163, 1);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(51, 51, 51, 1);
+}
+
+.header-navigation {
+  display: grid;
+  grid-template-columns: 171px repeat(9, 1fr) 350px;
+  margin: 0px;
+  height: 76px;
+  width: 1440px;
+  box-shadow: inset 0px -1px rgba(239, 245, 251, 1);
+  list-style-type: none;
+  padding-inline-start: 0px;
+  
+}
+
+.header-navigation > .you-talk-logo {
+  background-image: url(../../logos/youtalk.svg);
+  width: 51px;
+  height: 36px;
+  margin: 20px 21px 20px 120px;
+}
+
+.header-navigation > li {
+  margin: 30px 0px 30px 30px;
+  font-family: 'montserrat-medium';
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  text-wrap: nowrap;
+  line-height: 114%;
+}
+
+li + .arrow-down {
+  background-image: url(../../logos/arrow_down.svg);
+  width: 14px;
+  height: 14px;
+  margin: 32px 0px 30px 8px;
+}
+
+.arrow-down + li {
+  margin-left: 30px;
+}
+
+li + .frame-pass-through {
+  height: 48;
+  width: 230;
+  background-color: rgba(227, 245, 245, 1);
+  margin: 14px 120px 14px 164px;
+  border-radius: 4px;
+}
+
+.frame-pass-through > span {
+  display: inline-block;
+  height: 20px;
+  width: 190px;
+  margin: 14px 20px;
+  font-family: 'montserrat-bold';
+  color: rgba(3, 178, 165, 1);
+  font-size: 16px;
+}
+
+.breadcrumb {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 51px 20px 31px;
+  height: 18px;
+  width: 110px;
+  margin-top: 16px;
+  margin-left: 126px;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.breadcrumb > li {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.arrow-right {
+  background-image: url(../../logos/arrow_right.svg);
+  width: 16px;
+  height: 16px;
+  margin: 0px 8px 0px 4px;
+}
+
+main > h1 {
+  margin-top: 30px;
+  margin-left: 120px;
+  height: 56;
+  font-family: 'montserrat-bold';
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.hashtags {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  height: 32px;
+  width: 1181px;
+  text-wrap: nowrap;
+  margin-left: 120px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.hashtags > li {
+  border: solid 1px rgba(193, 197, 205, 1);
+  border-radius: 24px;
+  margin-right: 8px;
+  padding: 6px 8px;
+  font-family: 'montserrat-semibold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+ul > .this-smiling-face {
+  display: inline-block;
+  padding: 0px;
+}
+
+.this-smiling-face > a {
+  display: flex;
+  align-items: center;
+  width: 68px;
+}
+
+.this-smiling-face > a > img {
+  width: 20px;
+  height: 20px;
+  margin: 6px 5px 6px 8px;
+}
+
+ul > .this-unicorn {
+  border: solid 2px rgba(22, 200, 187, 1);
+  height: 28px;
+  display: inline-block;
+  padding: 0px;
+}
+
+.this-unicorn > a {
+  width: 67px;
+  display: flex;
+  align-items: center;
+}
+
+.this-unicorn > a > img {
+  width: 20px;
+  height: 20px;
+  margin: 4px 5px 4px 6px;
+}
+
+.big-images {
+  display: grid;
+  grid-template-columns: repeat(2, 588px);
+  gap: 24px;
+  width: 1200px;
+  height: 284px;
+  margin-top: 24px;
+  margin-left: 120px;
+}
+
+.big-images > img {
+  height: 260px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.medium-images {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 384px);
+  width: 1200px;
+  height: 974px;
+  margin-left: 120px;
+}
+
+.medium-images > img {
+  height: 260px;
+  border-radius: 16px 16px 0px 0px;
+}
+
