@@ -103,6 +103,10 @@
     grid-template-columns: repeat(2, 468px);
   }
 
+  .background-gradient {
+    display: none;
+  }
+
   .medium-images {
     grid-template-columns: repeat(3, 304px);
     grid-template-rows: repeat(2, 458px);
