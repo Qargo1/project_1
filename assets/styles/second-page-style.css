@@ -18,29 +18,25 @@
     src: url('../fonts/montserrat_semibold.ttf');
 }
 
+@font-face {
+    font-family: 'montserrat-italic';
+    src: url('../fonts/montserrat_italic.ttf');
+}
+
+@media (width <= 768px) {
+    header > nav > ul::after {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-image: url(../../logos/header_navigation_visible.svg);
+        background-image: ;
+        width: 18px;
+        height: 18px;
+    }
+}
+
 @media (width > 768px) {
-    .big-images {
-        grid-template-columns: repeat(2, auto);
-    }
-
-    .big-images>.grid-container {
-        height: 499px;
-    }
-
-    .big-images>.grid-container>img {
-        height: 260px;
-        width: 100%;
-        border-radius: 16px 16px 0px 0px;
-    }
-
-    .medium-images {
-        grid-template-columns: repeat(3, auto);
-    }
-
-    .more-info-loader {
-        margin-top: 56px;
-    }
-
     footer {
         grid-template-rows: 209px auto;
     }
@@ -71,41 +67,20 @@
 }
 
 @media (width > 1024px) {
-    body {
-        width: 1440px;
-        grid-template-rows: 76px 64px 1841px 302px;
-    }
 
-    main {
-        width: 1200px;
-        margin-left: 120px;
-    }
 
     .header-navigation {
         grid-template-columns: 171px repeat(9, 1fr) 350px;
     }
 
-    .header-navigation>.you-talk-logo {
+    .header-navigation > .you-talk-logo {
         margin-left: 32px;
         margin: 20px 21px 20px 120px;
     }
 
     .breadcrumb {
+        margin-top: 16px;
         margin-left: 126px;
-    }
-
-    .hashtags {
-        width: 1181px;
-        height: 32px;
-    }
-
-    .medium-images {
-        grid-template-rows: repeat(2, 475px);
-        width: 1200px;
-    }
-
-    .medium-images>.grid-container>img {
-        height: 260px;
     }
 
     footer {
@@ -119,44 +94,16 @@
 
 /* iPad Pro 12.9 - 1 */
 @media (width <=1024px) and (width > 768px) {
-    body {
-        width: 1024px;
-        grid-template-rows: 76px 74px 1790px 302px;
-    }
-
-    main {
-        width: 960px;
-        margin-left: 32px;
-    }
-
     .header-navigation {
         grid-template-columns: 83px repeat(9, 1fr) 262px;
     }
 
-    .header-navigation>.you-talk-logo {
+    .header-navigation > .you-talk-logo {
         margin: 20px 21px 20px 32px;
     }
 
     .breadcrumb {
         margin-left: 32px;
-    }
-
-    .hashtags {
-        flex-wrap: wrap;
-        width: 934px;
-        height: 72px;
-    }
-
-    .background-gradient {
-        display: none;
-    }
-
-    .medium-images {
-        grid-template-rows: repeat(2, 458px);
-    }
-
-    .medium-images>.grid-container>img {
-        height: 206px;
     }
 
     footer {
@@ -170,63 +117,22 @@
 
 /*Ipad mini - 2 */
 @media (width <=768px) and (width > 414px) {
-
-    body {
-        width: 768px;
-        grid-template-rows: 76px 74px 2947px 454px;
+    header > nav > ul::after {
+        top: 29px;
+        right: 31px;
     }
 
-    main {
-        width: 728px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .header-navigation>li {
+    .header-navigation > li {
         display: none;
     }
 
-    .header-navigation>.you-talk-logo {
+    .header-navigation > .you-talk-logo {
         display: block;
         margin: 20px;
     }
 
     .breadcrumb {
         margin-left: 20px;
-    }
-
-    .hashtags {
-        flex-wrap: wrap;
-        height: 72px;
-    }
-
-    .background-gradient {
-        display: none;
-    }
-
-    .big-images {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, 599px);
-        gap: 24px;
-    }
-
-    .big-images>.grid-container>img {
-        height: 404px;
-        width: 100%;
-        border-radius: 16px 16px 0px 0px;
-    }
-
-    .medium-images {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, 446px);
-    }
-
-    .medium-images>.grid-container>img {
-        height: 206px;
-    }
-
-    .more-info-loader {
-        margin-top: 33px;
     }
 
     footer {
@@ -264,18 +170,6 @@
 
 /* IPhone 11 Pro Max - 2 */
 @media (width <=414px) and (width > 320px) {
-
-    body {
-        width: 414px;
-        grid-template-rows: 72px 66px 2159px 746px;
-    }
-
-    main {
-        width: 374px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     .header-navigation>li {
         display: none;
     }
@@ -287,47 +181,6 @@
 
     .breadcrumb {
         margin-left: 20px;
-    }
-
-    .hashtags {
-        width: 388px;
-        flex-wrap: nowrap;
-        height: 32px;
-        overflow: hidden;
-    }
-
-    .background-gradient {
-        display: none;
-    }
-
-    .big-images {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, 466px);
-        gap: 16px;
-    }
-
-    .big-images>.grid-container>img {
-        height: 206px;
-        width: 100%;
-        border-radius: 16px 16px 0px 0px;
-    }
-
-    .medium-images {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, 462px);
-    }
-
-    .medium-images>.hidden-for-iphone {
-        visibility: hidden;
-        height: 0px;
-    }
-
-    .medium-images>.grid-container>img {
-        height: 206px;
-    }
-
-    .more-info-loader {
-        margin-top: -130px;
     }
 
     footer {
@@ -389,69 +242,17 @@
 
 /* Iphone SE - 1 */
 @media (width <=320px) {
-
-    body {
-        width: 320px;
-        grid-template-rows: 56px 66px 2231px 746px;
-    }
-
-    main {
-        width: 288px;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-
-    .header-navigation>li {
+    .header-navigation > li {
         display: none;
     }
 
-    .header-navigation>.you-talk-logo {
+    .header-navigation > .you-talk-logo {
         display: block;
         margin: 11px 11px 11px 16px;
     }
 
     .breadcrumb {
         margin-left: 16px;
-    }
-
-    .hashtags {
-        flex-wrap: nowrap;
-        height: 32px;
-        overflow: hidden;
-    }
-
-    .background-gradient {
-        display: none;
-    }
-
-    .big-images {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, 484px);
-        gap: 16px;
-    }
-
-    .big-images>.grid-container>img {
-        height: 206px;
-        width: 100%;
-        border-radius: 16px 16px 0px 0px;
-    }
-
-    .medium-images {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, 484px);
-    }
-
-    .medium-images>.hidden-for-iphone {
-        visibility: hidden;
-        height: 0px;
-    }
-
-    .medium-images>.grid-container>img {
-        height: 206px;
-    }
-
-    .more-info-loader {
-        margin-top: -134px;
     }
 
     footer {
@@ -464,15 +265,15 @@
         grid-template-columns: 182px 106px;
     }
 
-    .first-row>section>div {
+    .first-row > section>div {
         width: 288px;
     }
 
-    footer>.first-row>section>form {
+    footer > .first-row > section>form {
         width: 288px;
     }
 
-    section>form>button {
+    section > form > button {
         display: none;
         width: 0px;
     }
@@ -521,20 +322,66 @@
 }
 
 body {
+    width: 1440px;
+    grid-template-rows: 76px 88px 5543px 302px;
     display: grid;
     margin: 0px;
 }
 
-a {
-    text-decoration: none;
-    color: rgba(51, 51, 51, 1);
+main {
+    display: grid;
+    position: relative;
+    grid-template-columns: 690px 282px;
+    grid-template-areas: 'main aside' 'bottom bottom' 'gradient gradient';
+    column-gap: 228px;
+    width: 1200px;
+    margin-left: 120px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+p {
+    font-family: 'montserrat-medium';
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h3 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: 'montserrat-bold';
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h3 + p {
+    font-family: 'montserrat-medium';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h4 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: 'montserrat-bold';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+nav > ul {
+    list-style-type: none;
 }
 
 ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
     padding-inline-start: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    list-style-type: none;
 }
 
 .header-navigation {
@@ -544,13 +391,13 @@ ul {
     box-shadow: inset 0px -1px rgba(239, 245, 251, 1);
 }
 
-.header-navigation>.you-talk-logo {
+.header-navigation > .you-talk-logo {
     background-image: url(../../logos/youtalk.svg);
     width: 51px;
     height: 36px;
 }
 
-.header-navigation>li {
+.header-navigation > li {
     margin: 30px 0px 30px 30px;
     font-family: 'montserrat-medium';
     font-size: 14px;
@@ -559,18 +406,18 @@ ul {
     line-height: 114%;
 }
 
-li+.arrow-down {
+li + .arrow-down {
     background-image: url(../../logos/arrow_down.svg);
     width: 14px;
     height: 14px;
     margin: 32px 0px 30px 8px;
 }
 
-.arrow-down+li {
+.arrow-down + li {
     margin-left: 30px;
 }
 
-li+.frame-pass-through {
+li + .frame-pass-through {
     height: 48;
     width: 230;
     background-color: rgba(227, 245, 245, 1);
@@ -578,7 +425,7 @@ li+.frame-pass-through {
     border-radius: 4px;
 }
 
-.frame-pass-through>div {
+.frame-pass-through > div {
     display: inline-block;
     height: 20px;
     width: 190px;
@@ -589,16 +436,11 @@ li+.frame-pass-through {
 }
 
 .breadcrumb {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 51px 20px 31px;
-    height: 18px;
-    width: 110px;
-    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
 }
 
-.breadcrumb>li {
+.breadcrumb > li {
     font-family: 'montserrat-regular';
     font-size: 12px;
     text-align: center;
@@ -613,234 +455,458 @@ li+.frame-pass-through {
     margin: 0px 8px 0px 4px;
 }
 
-main>h1 {
-    margin-top: 30px;
-    height: 56;
+.main-text {
+    grid-area: main;
+}
+
+.main-text > h1 {
     font-family: 'montserrat-bold';
     font-size: 48px;
     line-height: 56px;
+    margin-block-start: 0em;
+    margin-block-end: 16px;
 }
 
-.hashtags {
+.main-text > h1 + div {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    list-style-type: none;
-    text-wrap: nowrap;
-}
-
-.hashtags>li {
-    border: solid 1px rgba(193, 197, 205, 1);
-    border-radius: 24px;
-    margin-right: 8px;
-    padding: 6px 8px;
-    font-family: 'montserrat-semibold';
+    margin-bottom: 24px;
     font-size: 14px;
     line-height: 20px;
 }
 
-ul>.this-smiling-face {
-    display: inline-block;
-    padding: 0px;
+.main-text > h1 + div > p {
+    margin-right: 8px;
 }
 
-.this-smiling-face>a {
-    display: flex;
-    align-items: center;
-    width: 68px;
+.point {
+    line-height: 1em;
 }
 
-.this-smiling-face>a>img {
-    width: 20px;
-    height: 20px;
-    margin: 6px 5px 6px 8px;
+.main-text > img:first-of-type {
+    width: 690px;
+    height: 331px;
 }
 
-ul>.this-unicorn {
-    border: solid 2px rgba(22, 200, 187, 1);
-    height: 28px;
-    display: inline-block;
-    padding: 0px;
+ul > ul {
+    list-style-type: none;
 }
 
-.this-unicorn>a {
-    width: 67px;
-    display: flex;
-    align-items: center;
+.this-underline > ul {
+    list-style-type: disc;
 }
 
-.this-unicorn>a>img {
-    width: 20px;
-    height: 20px;
-    margin: 4px 5px 4px 6px;
+.this-underline > ul > li {
+    text-decoration: underline;
 }
 
-.big-images {
+.this-underline > ul > ul > li {
+    text-decoration: underline;
+}
+
+div > ul > li::marker {
+    color: #03B2A5;
+}
+
+.background-color-F3F7FE {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    padding: 24px;
+    background-color: rgba(243, 247, 254, 1);
+}
+
+.background-color-F3F7FE > p::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(../../logos/comas.svg);
+    opacity: 0.6;
+    width: 55.78px;
+    height: 36px;
+    left: 24px;
+    top: 24px;
+}
+
+.background-color-F3F7FE > p:first-child {
+    font-family: 'montserrat-italic';
+    margin-bottom: 8px;
+}
+
+.background-color-F3F7FE > p:last-child {
+    font-family: 'montserrat-bold';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.background-color-F3F7FE + div > ul > li {
+    font-family: 'montserrat-medium';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.background-color-F3F7FE + div > ul + img {
+    margin-top: 8px;
+    width: 690px;
+    height: 331px;
+    margin-bottom: 16px;
+}
+
+.background-color-F3F7FE + div > ul + img + p {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+}
+
+.background-color-F3F7FE + div > ul + img + p + p {
+    font-family: 'montserrat-medium';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.background-color-bulb {
+    position: relative;
+    padding: 24px 104px 48px 102px;
+}
+
+.background-color-bulb > img {
+    position: absolute;
+    z-index: -1;
+    left: 225.5px;
+    top: 0px;
+    bottom: 0px;
+    width: 240px;
+    height: 168px;
+}
+
+.background-color-bulb > p {
+    font-family: 'montserrat-italic';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.background-color-bulb + p {
+    font-family: 'montserrat-medium';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.background-color-bulb + p + div {
     display: grid;
-    column-gap: 24px;
+    grid-template-columns: 282px 385px;
+    grid-template-rows: 380px;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.background-color-FEFAEC {
+    background-color: #FEFAEC;
+    border-radius: 16px;
+    padding: 24px;
     margin-top: 24px;
     margin-bottom: 24px;
 }
 
-.grid-container {
-    /* изменить на грид-item*/
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-}
-
-.grid-container>p {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    left: 8px;
-    top: 8px;
-    border: solid 1px rgba(193, 197, 205, 1);
-    border-radius: 24px;
-    font-family: 'montserrat-semibold';
-    font-size: 14px;
-    line-height: 20px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    padding: 5px 7px 5px 7px;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.grid-container>p+p {
-    left: 8px;
-    top: 48px;
-}
-
-.grid-container>p>img {
-    width: 18px;
-    height: 18px;
-    margin-right: 4px;
-    padding: 1px;
-}
-
-.big-images>.grid-container>div {
-    border: solid 1px rgba(222, 222, 222, 1);
-    border-radius: 0px 0px 16px 16px;
-    padding: 15px;
-    flex: 1;
-}
-
-.big-images>.grid-container>div>div:first-child {
-    font-family: 'montserrat-bold';
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 4px;
-}
-
-.big-images>.grid-container>div>div:first-child+div {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
+.background-color-FEFAEC > h4 {
     margin-bottom: 8px;
-    margin-top: 0px;
 }
 
-.big-images>.grid-container>div>div:first-child+div+div {
-    font-family: 'montserrat-regular';
-    font-size: 14px;
-    line-height: 20px;
+.background-color-FEFAEC + h3 + ul {
+    width: 572px;
 }
 
-.big-images>.grid-container>div>div:last-child {
-    grid-row-start: 5;
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-    color: rgba(134, 134, 134, 1);
+.this-hands-img {
+    display: grid;
+    grid-template-columns: 281px 386px;
+    grid-template-rows: 174px;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.this-hands-img + p {
+    margin-bottom: 24px;
+}
+
+.background-color-FFF3EB {
+    background-color: #FFF3EB;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.main-two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 333px);
+    grid-template-rows: 451px;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.main-two-columns + img {
+    margin-left: 256.13px;
+    width: 178.75px;
+    height: 32px;
+    margin-bottom: 24px;
+}
+
+.main-two-columns + img + p {
+    margin-bottom: 24px;
+}
+
+.background-color-03B2A5 {
+    background-color: rgba(3, 178, 165, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.background-color-03B2A5 > h4 {
+    margin-bottom: 8px;
+}
+
+.background-color-03B2A5 + nav {
+    display: flex;
+    flex-direction: row;
+    color: rgba(41, 99, 163, 1);
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.background-color-03B2A5 + nav > a {
+    margin-right: 8px;
+    text-wrap: nowrap;
+}
+
+.background-color-03B2A5 + nav > p {
+    margin-right: 8px;
+}
+
+.main-bottom {
+    grid-area: bottom;
+    position: relative;
+    display: grid;
+    grid-template-columns: 349px 520px;
+    column-gap: 302px;
+    width: 1200px;
+    border-top: 1px solid rgba(222, 222, 222, 1);
+}
+
+.main-bottom > div > h1 {
+    font-family: 'montserrat-bold';
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+}
+
+.standard-button {
+    padding-block: 0px;
+    padding-inline: 0px;
+    border-width: 0px;
+    background-color: rgba(22, 200, 187, 1);
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 238px;
+    height: 60px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.main-bottom > div + img {
+    width: 439px;
+    height: 397px;
+    margin-top: 7px;
+    margin-right: 189px;
+
+}
+
+.main-bottom > div + img + img {
     position: absolute;
-    bottom: 16px;
+    right: -120px;
+    top: 72px;
 }
 
 .background-gradient {
-    z-index: -1;
     position: absolute;
-    background: linear-gradient(rgba(239, 245, 251, 1), rgba(255, 255, 255, 1));
+    left: -120px;
+    bottom: 0px;
+    grid-area: gradient;
+    background-color: rgba(239, 245, 251, 1);
     width: 1440px;
-    height: 672px;
-    top: 401px;
-    left: 0px;
+    height: 82px;
     border-radius: 220% / 5% 40px 0 0;
     /* 220% означает сильное горизонтальное растяжение кривой,
        5% управляет вертикальным растяжением верхней стороны,
        40px применяет закругление только к верхним углам. */
 }
 
-.medium-images {
-    display: grid;
-    gap: 24px;
+.background-color-E6F0FD {
+    background-color: #E6F0FD;
+    padding: 24px;
+    height: 464px;
 }
 
-.medium-images>.grid-container>div {
-    border: solid 1px rgba(222, 222, 222, 1);
-    border-radius: 0px 0px 16px 16px;
-    padding: 14px;
-    flex: 1;
-}
-
-.medium-images>.grid-container>div>div:first-child {
+.background-color-E6F0FD > p {
     font-family: 'montserrat-bold';
     font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 4px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 24px;
 }
 
-.medium-images>.grid-container>div>div:first-child+div {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-    margin-bottom: 8px;
-}
-
-.medium-images>.grid-container>div>div:first-child+div+div {
+.background-color-E6F0FD > p + p {
     font-family: 'montserrat-regular';
     font-size: 14px;
     line-height: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-top: 8px;
 }
 
-.medium-images>.grid-container>div>div:last-child {
-    font-family: 'montserrat-regular';
+#more-info-top {
+    height: 48px;
+    width: 234px;
+}
+
+.card {
+    position: relative;
+    margin-top: 24px;
+    padding: 24px 16px 36px 16px;
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-radius: 16px;
+    height: 421px;
+    margin-bottom: 28px;
+}
+
+.card > div:first-child {
+    position: absolute;
+    z-index: 0;
+    top: 16px;
+    left: 16px;
+    width: 105px;
+}
+
+.card > div:first-child > p {
+    z-index: -1;
+    background-color: rgba(243, 244, 248, 0.7);
+    margin-bottom: 8px;
+    border-radius: 6px;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.25px;
-    color: rgba(134, 134, 134, 1);
-    position: absolute;
-    bottom: 16px;
+    padding-left: 6px;
+    padding-top: 3px;
 }
 
-.medium-images>.grid-container>img {
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;
+.card > div:first-child > p + p {
+    width: 74px;
 }
 
-.more-info-loader {
+.card > div:first-child + div > img {
+    width: 120px;
+    height: 120px;
+    margin-left: 65px;
+    border: 1px solid rgb(46, 191, 128);
+    border-radius: 50%;
+}
+
+.card > div:first-child + div > p {
+    font-family: 'montserrat-bold';
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 89.5px;
+}
+
+.card > div:first-child + div > p + p {
+    font-family: 'montserrat-semibold';
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 83.5px;
+}
+
+.card > div:first-child + div + div {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'montserrat-medium';
+    font-size: 14px;
+    color: rgba(162, 167, 177, 1);
     justify-content: center;
 }
 
-.more-info-loader button {
-    background-color: rgba(3, 178, 165, 1);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.card > div:first-child + div + div > p {
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.border {
+    width: 250px;
+    height: 1px;
+    background-color: rgba(222, 222, 222, 0.7);
+    margin-bottom: 16px;
+}
+
+.border + div > p {
     font-family: 'montserrat-bold';
     font-size: 16px;
-    width: 182px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.border + div > ul > li {
+    margin-left: 24px;
+}
+
+aside > div:last-child {
+    position: relative;
+    border-radius: 24px;
+    border: 0.1px solid rgba(52, 201, 138, 1);
+    margin-top: 42px;
+    padding: 32px;
+}
+
+aside > div:last-child > p:first-child > span {
+    color: rgba(41, 99, 163, 1);
+    font-family: 'montserrat-bold';
+    font-size: 24px;
+    line-height: 32px;
+    margin-right: 4px;
+}
+
+aside > div:last-child > p:first-child {
+    color: rgba(41, 99, 163, 1);
+    font-family: 'montserrat-bold';
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+aside > div:last-child > p:first-child + p {
+    font-family: 'montserrat-regular';
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+aside > div:last-child > p:first-child + p + p {
+    font-family: 'montserrat-bold';
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+aside > div:last-child > button {
     height: 48px;
+    width: 108px;
+}
+
+aside > div:last-child > img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 24px;
 }
 
 footer {

@@ -70,6 +70,23 @@
   }
 }
 
+@media (width <= 768px) {
+  header > nav {
+    position: relative;
+  }
+
+  header > nav > ul::after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-image: url(../../logos/header_navigation_visible.svg);
+    background-image: ;
+    width: 18px;
+    height: 18px;
+  }
+}
+
 @media (width > 1024px) {
   body {
     width: 1440px;
@@ -191,6 +208,11 @@
     margin: 20px;
   }
 
+  header > nav > ul::after {
+    top: 29px;
+    right: 31px;
+  }
+
   .breadcrumb {
     margin-left: 20px;
   }
@@ -283,6 +305,11 @@
   .header-navigation > .you-talk-logo {
     display: block;
     margin: 20px;
+  }
+
+  header > nav > ul::after {
+    top: 27px;
+    right: 35px;
   }
 
   .breadcrumb {
@@ -408,6 +435,11 @@
   .header-navigation > .you-talk-logo {
     display: block;
     margin: 11px 11px 11px 16px;
+  }
+
+  header > nav > ul::after {
+    top: 19px;
+    right: 19px;
   }
 
   .breadcrumb {
@@ -540,7 +572,6 @@ ul {
 .header-navigation {
   display: grid;
   margin: 0px;
-  width: 1440px;
   box-shadow: inset 0px -1px rgba(239, 245, 251, 1);
 }
 
