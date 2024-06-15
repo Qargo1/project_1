@@ -18,312 +18,240 @@
     src: url('../fonts/montserrat_semibold.ttf');
 }
 
-@font-face {
-    font-family: 'montserrat-italic';
-    src: url('../fonts/montserrat_italic.ttf');
-}
-
-@media (width <= 768px) {
-    header > nav > ul::after {
-        display: block;
-        content: "";
-        position: absolute;
-        z-index: 1;
-        background-image: url(../../logos/header_navigation_visible.svg);
-        background-image: ;
-        width: 18px;
-        height: 18px;
-    }
-}
-
 @media (width > 768px) {
-    footer {
-        grid-template-rows: 209px auto;
+    .border + div > ul > li {
+        font-family: 'montserrat-regular';
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
     }
 
-    .first-row {
-        border-bottom: 1px solid rgba(157, 157, 157, 1);
+    .main-text {
+        row-gap: 24px;
     }
 
-    .first-row>section>div {
-        width: 326px;
-        height: 52px;
+    .main-two-columns + div {
+        max-height: 32px;
+        margin-left: 256.13px;
     }
 
-    .footer-logos>div {
-        width: 221px;
-        height: 50px;
+    .header-navigation > a:first-child + a {
+        width: 43px;
     }
 
-    .footer-logos>div>img:last-child {
-        margin-left: 8.16px;
-        margin-bottom: 12.02px;
+    .header-navigation > a:first-child + a + a {
+        width: 60px;
     }
 
-    .second-row {
-        margin-top: 16px;
-        margin-left: 8px;
+    .header-navigation > a:first-child + a + a + a {
+        width: 97px;
+    }
+
+    .header-navigation > a:first-child + a + a + a + a {
+        width: 92px;
+    }
+
+    .arrow-down {
+        width: 109px;
     }
 }
 
 @media (width > 1024px) {
-
-
-    .header-navigation {
-        grid-template-columns: 171px repeat(9, 1fr) 350px;
+    body {
+        width: 1440px;
+        grid-template-rows: 76px 88px 5543px 302px;
     }
 
-    .header-navigation > .you-talk-logo {
-        margin-left: 32px;
-        margin: 20px 21px 20px 120px;
+    main {
+        grid-template-columns: 690px 282px;
+        grid-template-rows: 5033px 428px 82px;
+        column-gap: 228px;
+        margin-left: 120px;
     }
 
-    .breadcrumb {
-        margin-top: 16px;
-        margin-left: 126px;
+    .background-color-bulb + p + div {
+        display: grid;
+        grid-template-columns: 282px 385px;
+        grid-template-rows: 380px;
+        gap: 24px;
     }
 
-    footer {
-        padding: 40px 120px 17px 120px;
+    .main-bottom > div > h1 {
+        margin-top: 72px;
     }
 
-    .first-row {
-        grid-template-columns: 204px 197.5px 577.5px 221px;
-    }
-}
-
-/* iPad Pro 12.9 - 1 */
-@media (width <=1024px) and (width > 768px) {
-    .header-navigation {
-        grid-template-columns: 83px repeat(9, 1fr) 262px;
+    #help-choose-spesialist {
+        margin-top: 32px;
+        width: 238px;
     }
 
-    .header-navigation > .you-talk-logo {
-        margin: 20px 21px 20px 32px;
+    .arrow-down + a {
+        margin-right: 256px;
     }
 
-    .breadcrumb {
-        margin-left: 32px;
+    aside {
+        display: grid;
+        grid-template-rows: 512px 481px 292px 304px;
+        row-gap: 24px;
     }
 
-    footer {
-        padding: 40px 26px 17px 32px;
+    aside > .background-color-E6F0FD {
+        padding: 24px 12.5px;
     }
 
-    .first-row {
-        grid-template-columns: 141px 127px 471px 221px;
-    }
-}
-
-/*Ipad mini - 2 */
-@media (width <=768px) and (width > 414px) {
-    header > nav > ul::after {
-        top: 29px;
-        right: 31px;
-    }
-
-    .header-navigation > li {
-        display: none;
-    }
-
-    .header-navigation > .you-talk-logo {
-        display: block;
-        margin: 20px;
-    }
-
-    .breadcrumb {
-        margin-left: 20px;
-    }
-
-    footer {
-        position: relative;
-        padding: 35px 20px 23px 20px;
-        grid-template-rows: 210px 122px auto;
-    }
-
-    .first-row {
-        grid-template-columns: 141px 137px 450px;
-    }
-
-    .footer-logos {
-        text-wrap: nowrap;
+    aside > .background-color-E6F0FD > img + p {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 12.5px;
+        margin-right: 12.5px;
         margin-top: 10px;
+        font-size: 14px;
     }
 
-    .footer-logos>div {
-        height: 52px;
+    aside > .background-color-E6F0FD > p + p {
+        font-size: 12px;
     }
 
-    .footer-logos>div>img:last-child {
-        margin-left: 8.16px;
-        margin-bottom: 12.02px;
+    #more-info-top {
+        margin-left: 12.5px;
+        height: 48px;
+        width: 234px;
     }
 
-    .second-row {
-        position: absolute;
-        border-top: 1px solid rgba(157, 157, 157, 1);
-        padding-top: 16px;
-        left: 20px;
-        bottom: 23px;
+    aside > .card {
+        position: relative;
+        padding: 24px 16px 36px 16px;
+    }
+
+    .card > div:first-child + div > img {
+        width: 120px;
+        height: 120px;
+        margin-left: 65px;
+    }
+
+    .border + div {
+        text-wrap: nowrap;
+    }
+
+    .card > div:first-child + div + div > p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #more-info-middle {
+        margin-top: 16px;
+        width: 250px;
+        height: 48px;
+    }
+
+    .card + img + div {
+        padding: 32px;
+    }
+
+    aside > div:last-child > p:first-child {
+        height: 32px;
+    }
+
+    aside > div:last-child > p:first-child + p {
+        height: 80px;
     }
 }
 
-/* IPhone 11 Pro Max - 2 */
-@media (width <=414px) and (width > 320px) {
-    .header-navigation>li {
-        display: none;
+/* iPad Pro 12.9" - 3 */
+@media (width <= 1024px) {
+    body {
+        width: 1024px;
+        grid-template-rows: 76px 88px 4910px 302px;
     }
 
-    .header-navigation>.you-talk-logo {
+    main {
+        grid-template-columns: 714px 222px;
+        column-gap: 24px;
+        margin-left: 32px;
+    }
+
+    .new-element {
         display: block;
-        margin: 20px;
     }
 
-    .breadcrumb {
-        margin-left: 20px;
-    }
-
-    footer {
-        position: relative;
-        padding: 35px 20px 90px 19px;
-        grid-template-rows: 207px 223px auto;
-    }
-
-    .first-row {
-        grid-template-columns: 269px 106px;
-    }
-
-    .first-row>section>div {
-        width: 375px;
-    }
-
-    .footer-logos {
-        grid-row: 3;
-        text-wrap: nowrap;
-        margin-top: 23px;
-    }
-
-    .footer-logos::after {
-        display: block;
-        content: "";
-        height: 2px;
-        width: 374px;
-        background-color: rgba(157, 157, 157, 1);
-        margin-top: 20px;
-    }
-
-    .footer-logos>div {
-        height: 50px;
-    }
-
-    .first-row>.footer-logos>div:last-child {
-        margin-top: 20px;
-    }
-
-    .footer-logos>div>img:last-child {
-        margin-left: 8.16px;
-        margin-bottom: 12.02px;
-    }
-
-    .second-row {
-        position: absolute;
-        width: 189px;
-        padding-top: 20px;
-        left: 19.5px;
-        bottom: 17px;
-    }
-
-    .second-row>span {
-        display: block;
-        text-wrap: nowrap;
-        height: 40px;
-    }
-}
-
-/* Iphone SE - 1 */
-@media (width <=320px) {
-    .header-navigation > li {
-        display: none;
-    }
-
-    .header-navigation > .you-talk-logo {
-        display: block;
-        margin: 11px 11px 11px 16px;
-    }
-
-    .breadcrumb {
-        margin-left: 16px;
-    }
-
-    footer {
-        position: relative;
-        padding: 35px 14px 90px 18px;
-        grid-template-rows: 184px 223px auto;
-    }
-
-    .first-row {
-        grid-template-columns: 182px 106px;
-    }
-
-    .first-row > section>div {
-        width: 288px;
-    }
-
-    footer > .first-row > section>form {
-        width: 288px;
-    }
-
-    section > form > button {
-        display: none;
+    .hide-element {
+        display: none !important;
         width: 0px;
+        height: 0px;
     }
 
-    .footer-logos {
-        grid-row: 3;
-        text-wrap: nowrap;
-        margin-top: 0px;
+    .main-text {
+        grid-template-rows: repeat(21, minmax(auto, 1fr));
+        max-height: 4286px;
+        row-gap: 24px;
     }
 
-    .footer-logos::after {
-        display: block;
-        content: "";
-        height: 2px;
-        width: 288px;
-        background-color: rgba(157, 157, 157, 1);
-        margin-top: 20px;
+    .main-text > img:first-of-type {
+        height: 331px;
     }
 
-    .footer-logos>div {
-        height: 50px;
+    .background-color-bulb + p + div {
+        display: grid;
+        grid-template-columns: 282px 385px;
+        grid-template-rows: 380px;
+        gap: 24px;
+
     }
 
-    .first-row>.footer-logos>div:last-child {
-        margin-top: 20px;
+    aside {
+        display: grid;
+        grid-template-rows: 447px 489px 292px 260px;
+        row-gap: 24px;
     }
 
-    .footer-logos>div>img:last-child {
-        margin-left: 8.16px;
-        margin-bottom: 12.02px;
+    aside > .background-color-E6F0FD {
+        padding: 24px;
     }
 
-    .second-row {
-        position: absolute;
-        width: 189px;
-        padding-top: 20px;
-        left: 18px;
-        bottom: 17px;
+    aside > .card {
+        position: relative;
+        padding: 24px 24px 17px 24px;
     }
 
-    .second-row>span {
-        display: block;
-        text-wrap: nowrap;
-        height: 40px;
+    .card > div:first-child > p {
+        background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
     }
+
+    .card > div:first-child + div > img {
+        width: 120px;
+        height: 120px;
+        margin-left: 27px;
+    }
+
+    .card > div:first-child + div + div > p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #more-info-middle {
+        margin-top: 8px;
+        width: 250px;
+        height: 48px;
+    }
+
+    .card + img + div {
+        padding: 32px;
+    }
+
+    aside > div:last-child > p:first-child {
+        height: 32px;
+    }
+
+    aside > div:last-child > p:first-child + p {
+        height: 80px;
+    }
+}
+
+header {
+    width: inherit;
 }
 
 body {
-    width: 1440px;
-    grid-template-rows: 76px 88px 5543px 302px;
     display: grid;
     margin: 0px;
 }
@@ -331,23 +259,20 @@ body {
 main {
     display: grid;
     position: relative;
-    grid-template-columns: 690px 282px;
     grid-template-areas: 'main aside' 'bottom bottom' 'gradient gradient';
-    column-gap: 228px;
-    width: 1200px;
-    margin-left: 120px;
+    width: inherit;
 }
 
 aside {
     grid-area: aside;
 }
 
-p {
-    font-family: 'montserrat-medium';
+h1 {
+    font-family: 'montserrat-bold';
+    font-size: 48px;
+    line-height: 56px;
     margin-block-start: 0em;
-    margin-block-end: 0em;
-    font-size: 16px;
-    line-height: 24px;
+    margin-block-end: 16px;
 }
 
 h3 {
@@ -356,7 +281,6 @@ h3 {
     font-family: 'montserrat-bold';
     font-size: 24px;
     line-height: 32px;
-    margin-top: 24px;
     margin-bottom: 16px;
 }
 
@@ -374,105 +298,27 @@ h4 {
     line-height: 24px;
 }
 
-nav > ul {
-    list-style-type: none;
-}
-
-ul {
+p {
+    font-family: 'montserrat-medium';
     margin-block-start: 0em;
     margin-block-end: 0em;
-    padding-inline-start: 0px;
-}
-
-.header-navigation {
-    display: grid;
-    margin: 0px;
-    width: 1440px;
-    box-shadow: inset 0px -1px rgba(239, 245, 251, 1);
-}
-
-.header-navigation > .you-talk-logo {
-    background-image: url(../../logos/youtalk.svg);
-    width: 51px;
-    height: 36px;
-}
-
-.header-navigation > li {
-    margin: 30px 0px 30px 30px;
-    font-family: 'montserrat-medium';
-    font-size: 14px;
-    letter-spacing: 0.25px;
-    text-wrap: nowrap;
-    line-height: 114%;
-}
-
-li + .arrow-down {
-    background-image: url(../../logos/arrow_down.svg);
-    width: 14px;
-    height: 14px;
-    margin: 32px 0px 30px 8px;
-}
-
-.arrow-down + li {
-    margin-left: 30px;
-}
-
-li + .frame-pass-through {
-    height: 48;
-    width: 230;
-    background-color: rgba(227, 245, 245, 1);
-    margin: 14px 120px 14px 164px;
-    border-radius: 4px;
-}
-
-.frame-pass-through > div {
-    display: inline-block;
-    height: 20px;
-    width: 190px;
-    margin: 14px 20px;
-    font-family: 'montserrat-bold';
-    color: rgba(3, 178, 165, 1);
     font-size: 16px;
+    line-height: 24px;
 }
 
-.breadcrumb {
-    display: flex;
-    flex-direction: row;
-}
-
-.breadcrumb > li {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    text-align: center;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-}
-
-.arrow-right {
-    background-image: url(../../logos/arrow_right.svg);
-    width: 16px;
-    height: 16px;
-    margin: 0px 8px 0px 4px;
+footer {
+    margin-bottom: 0px;
 }
 
 .main-text {
+    display: flex;
+    flex-direction: column;
     grid-area: main;
 }
 
-.main-text > h1 {
-    font-family: 'montserrat-bold';
-    font-size: 48px;
-    line-height: 56px;
-    margin-block-start: 0em;
-    margin-block-end: 16px;
-}
-
-.main-text > h1 + div {
+.main-text > div:first-of-type > div {
     display: flex;
     flex-direction: row;
-    margin-bottom: 24px;
-    font-size: 14px;
-    line-height: 20px;
 }
 
 .main-text > h1 + div > p {
@@ -484,8 +330,11 @@ li + .frame-pass-through {
 }
 
 .main-text > img:first-of-type {
-    width: 690px;
-    height: 331px;
+    width: 100%;
+}
+
+.this-underline > h4 {
+    margin-bottom: 16px;
 }
 
 ul > ul {
@@ -494,6 +343,7 @@ ul > ul {
 
 .this-underline > ul {
     list-style-type: disc;
+    margin-left: 32px;
 }
 
 .this-underline > ul > li {
@@ -502,6 +352,17 @@ ul > ul {
 
 .this-underline > ul > ul > li {
     text-decoration: underline;
+    margin-left: 24px;
+}
+
+.this-underline > ul > ul > li + li {
+    text-decoration: underline;
+    margin-left: 40px;
+}
+
+.this-underline > ul > ul > li:last-child {
+    text-decoration: underline;
+    margin-left: 56px;
 }
 
 div > ul > li::marker {
@@ -510,8 +371,6 @@ div > ul > li::marker {
 
 .background-color-F3F7FE {
     position: relative;
-    margin-top: 40px;
-    margin-bottom: 24px;
     padding: 24px;
     background-color: rgba(243, 247, 254, 1);
 }
@@ -548,13 +407,12 @@ div > ul > li::marker {
 
 .background-color-F3F7FE + div > ul + img {
     margin-top: 8px;
-    width: 690px;
-    height: 331px;
+    width: 100%;
     margin-bottom: 16px;
 }
 
 .background-color-F3F7FE + div > ul + img + p {
-    margin-bottom: 24px;
+    color: rgba(134, 134, 134, 1);
     font-size: 14px;
     line-height: 130%;
     letter-spacing: 0.25px;
@@ -564,7 +422,6 @@ div > ul > li::marker {
     font-family: 'montserrat-medium';
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 24px;
 }
 
 .background-color-bulb {
@@ -594,23 +451,16 @@ div > ul > li::marker {
     font-family: 'montserrat-medium';
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 24px;
 }
 
 .background-color-bulb + p + div {
     display: grid;
-    grid-template-columns: 282px 385px;
-    grid-template-rows: 380px;
-    gap: 24px;
-    margin-bottom: 24px;
 }
 
 .background-color-FEFAEC {
     background-color: #FEFAEC;
     border-radius: 16px;
     padding: 24px;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .background-color-FEFAEC > h4 {
@@ -626,18 +476,15 @@ div > ul > li::marker {
     grid-template-columns: 281px 386px;
     grid-template-rows: 174px;
     gap: 24px;
-    margin-bottom: 24px;
 }
 
 .this-hands-img + p {
-    margin-bottom: 24px;
 }
 
 .background-color-FFF3EB {
     background-color: #FFF3EB;
     border-radius: 16px;
     padding: 24px;
-    margin-bottom: 24px;
 }
 
 .main-two-columns {
@@ -645,25 +492,12 @@ div > ul > li::marker {
     grid-template-columns: repeat(2, 333px);
     grid-template-rows: 451px;
     gap: 24px;
-    margin-bottom: 24px;
-}
-
-.main-two-columns + img {
-    margin-left: 256.13px;
-    width: 178.75px;
-    height: 32px;
-    margin-bottom: 24px;
-}
-
-.main-two-columns + img + p {
-    margin-bottom: 24px;
 }
 
 .background-color-03B2A5 {
     background-color: rgba(3, 178, 165, 0.1);
     border-radius: 16px;
     padding: 24px;
-    margin-bottom: 24px;
 }
 
 .background-color-03B2A5 > h4 {
@@ -701,7 +535,6 @@ div > ul > li::marker {
     font-family: 'montserrat-bold';
     font-size: 48px;
     line-height: 56px;
-    margin-bottom: 24px;
 }
 
 .standard-button {
@@ -710,9 +543,7 @@ div > ul > li::marker {
     border-width: 0px;
     background-color: rgba(22, 200, 187, 1);
     border-radius: 4px;
-    margin-top: 32px;
-    width: 238px;
-    height: 60px;
+    width: 100%;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -721,7 +552,6 @@ div > ul > li::marker {
     height: 397px;
     margin-top: 7px;
     margin-right: 189px;
-
 }
 
 .main-bottom > div + img + img {
@@ -744,10 +574,17 @@ div > ul > li::marker {
        40px применяет закругление только к верхним углам. */
 }
 
-.background-color-E6F0FD {
+aside {
+    grid-template-columns: 100%;
+}
+
+aside > .background-color-E6F0FD {
     background-color: #E6F0FD;
-    padding: 24px;
-    height: 464px;
+    border-radius: 16px;
+}
+
+.background-color-E6F0FD > img {
+    width: 100%;
 }
 
 .background-color-E6F0FD > p {
@@ -755,7 +592,6 @@ div > ul > li::marker {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    margin-top: 24px;
 }
 
 .background-color-E6F0FD > p + p {
@@ -765,19 +601,10 @@ div > ul > li::marker {
     margin-top: 8px;
 }
 
-#more-info-top {
-    height: 48px;
-    width: 234px;
-}
-
-.card {
+aside > .card {
     position: relative;
-    margin-top: 24px;
-    padding: 24px 16px 36px 16px;
     border: 1px solid rgba(222, 222, 222, 1);
     border-radius: 16px;
-    height: 421px;
-    margin-bottom: 28px;
 }
 
 .card > div:first-child {
@@ -805,30 +632,27 @@ div > ul > li::marker {
 }
 
 .card > div:first-child + div > img {
-    width: 120px;
-    height: 120px;
-    margin-left: 65px;
     border: 1px solid rgb(46, 191, 128);
     border-radius: 50%;
 }
 
 .card > div:first-child + div > p {
+    text-align: center;
     font-family: 'montserrat-bold';
     font-size: 20px;
     line-height: 28px;
-    margin-left: 89.5px;
 }
 
 .card > div:first-child + div > p + p {
     font-family: 'montserrat-semibold';
     font-size: 16px;
     line-height: 24px;
-    margin-left: 83.5px;
 }
 
 .card > div:first-child + div + div {
     display: flex;
     flex-direction: row;
+    text-wrap: nowrap;
     justify-content: space-between;
     font-family: 'montserrat-medium';
     font-size: 14px;
@@ -859,11 +683,15 @@ div > ul > li::marker {
     margin-left: 24px;
 }
 
+aside > img {
+    width: 100%;
+    height: 100%;
+}
+
 aside > div:last-child {
     position: relative;
     border-radius: 24px;
-    border: 0.1px solid rgba(52, 201, 138, 1);
-    margin-top: 42px;
+    border: 0.1px solid rgba(52, 201, 138, 1);ss
     padding: 32px;
 }
 
@@ -907,88 +735,4 @@ aside > div:last-child > img {
     right: 0px;
     bottom: 0px;
     border-radius: 24px;
-}
-
-footer {
-    display: grid;
-    background-color: rgba(41, 99, 163, 1);
-    color: rgba(255, 255, 255, 1);
-}
-
-.first-row {
-    display: grid;
-}
-
-.first-row>ul>li {
-    font-family: 'montserrat-bold';
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 16px;
-}
-
-.first-row>section>div {
-    font-family: 'montserrat-bold';
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 8px;
-}
-
-.first-row>section>form {
-    display: flex;
-    flex-direction: row;
-    height: 48px;
-    width: 384px;
-    margin-bottom: 8px;
-}
-
-.first-row>section>form>input {
-    flex: 1;
-    font-family: 'montserrat-regular';
-    font-size: 14px;
-    line-height: 20px;
-    padding-block: 0px;
-    padding-inline: 0px;
-    padding: 0px;
-    padding-left: 16px;
-    border-radius: 4px 0px 0px 4px;
-    border-color: rgba(157, 157, 157, 0.2);
-    border-width: 1px;
-}
-
-.first-row>section>form>button {
-    width: 64px;
-    border-radius: 0px 4px 4px 0px;
-    border-width: 0px;
-    background-color: rgba(22, 200, 187, 1);
-}
-
-.first-row>section>div:last-child {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.footer-logos>div>img:last-child {
-    margin-left: 8.16px;
-    width: 112.75px;
-    height: 19.09px;
-}
-
-.footer-logos>div:last-child {
-    height: 32px;
-    margin-top: 40px;
-}
-
-.footer-logos>div:last-child>a {
-    margin-right: 16px;
-}
-
-.second-row>span {
-    margin-right: 48px;
-    font-family: 'montserrat-regular';
-    font-size: 14px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.7);
 }

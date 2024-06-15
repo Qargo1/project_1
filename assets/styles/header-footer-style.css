@@ -1,0 +1,487 @@
+@font-face {
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat_medium.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat_bold.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url('../fonts/montserrat.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat-semibold';
+    src: url('../fonts/montserrat_semibold.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat-italic';
+    src: url('../fonts/montserrat_italic.ttf');
+}
+
+@media (width <= 768px) {
+    header > nav > a:last-child::after {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-image: url(../../logos/header_navigation_visible.svg);
+        background-image: ;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (width > 768px) {
+    .you-talk-logo {
+        height: 36px;
+    }
+
+    .frame-pass-through {
+        padding: 14px 20px;
+    }
+
+    footer {
+        grid-template-rows: 209px auto;
+    }
+
+    .first-row {
+        border-bottom: 1px solid rgba(157, 157, 157, 1);
+    }
+
+    .first-row > section>div {
+        width: 326px;
+        height: 52px;
+    }
+
+    .footer-logos > div {
+        width: 221px;
+        height: 50px;
+    }
+
+    .footer-logos > div > img:last-child {
+        margin-left: 8.16px;
+        margin-bottom: 12.02px;
+    }
+
+    .second-row {
+        margin-top: 16px;
+        margin-left: 8px;
+    }
+}
+
+@media (width > 1024px) {
+    .header-navigation {
+        grid-template-columns: repeat(9, minmax(auto, max-content));
+        gap: 30px;
+        padding: 14px 120px;
+    }
+
+    .you-talk-logo {
+        width: 51px;
+    }
+
+    .frame-pass-through {
+        width: 190px;
+    }
+
+    .breadcrumb {
+        margin-top: 16px;
+        margin-left: 126px;
+    }
+
+    footer {
+        padding: 40px 120px 17px 120px;
+    }
+
+    .first-row {
+        grid-template-columns: 204px 197.5px 577.5px 221px;
+    }
+}
+
+/* iPad Pro 12.9 - 1 */
+@media (width <=1024px) and (width > 768px) {
+    .header-navigation {
+        gap: 16px;
+        padding: 14px 32px;
+    }
+
+    .you-talk-logo {
+        width: 51px;
+    }
+
+    .frame-pass-through {
+        width: 230px;
+    }
+
+    .breadcrumb {
+        margin-left: 32px;
+    }
+
+    footer {
+        padding: 40px 26px 17px 32px;
+    }
+
+    .first-row {
+        grid-template-columns: 141px 127px 471px 221px;
+    }
+}
+
+/*Ipad mini - 2 */
+@media (width <=768px) and (width > 414px) {
+    header > nav > ul::after {
+        top: 29px;
+        right: 31px;
+    }
+
+    .header-navigation > li {
+        display: none;
+    }
+
+    .header-navigation > .you-talk-logo {
+        display: block;
+    }
+
+    .breadcrumb {
+        margin-left: 20px;
+    }
+
+    footer {
+        position: relative;
+        padding: 35px 20px 23px 20px;
+        grid-template-rows: 210px 122px auto;
+    }
+
+    .first-row {
+        grid-template-columns: 141px 137px 450px;
+    }
+
+    .footer-logos {
+        text-wrap: nowrap;
+        margin-top: 10px;
+    }
+
+    .footer-logos>div {
+        height: 52px;
+    }
+
+    .footer-logos>div>img:last-child {
+        margin-left: 8.16px;
+        margin-bottom: 12.02px;
+    }
+
+    .second-row {
+        position: absolute;
+        border-top: 1px solid rgba(157, 157, 157, 1);
+        padding-top: 16px;
+        left: 20px;
+        bottom: 23px;
+    }
+}
+
+/* IPhone 11 Pro Max - 2 */
+@media (width <=414px) and (width > 320px) {
+    .header-navigation > li {
+        display: none;
+    }
+
+    .header-navigation > .you-talk-logo {
+        display: block;
+    }
+
+    .breadcrumb {
+        margin-left: 20px;
+    }
+
+    footer {
+        position: relative;
+        padding: 35px 20px 90px 19px;
+        grid-template-rows: 207px 223px auto;
+    }
+
+    .first-row {
+        grid-template-columns: 269px 106px;
+    }
+
+    .first-row > section>div {
+        width: 375px;
+    }
+
+    .footer-logos {
+        grid-row: 3;
+        text-wrap: nowrap;
+        margin-top: 23px;
+    }
+
+    .footer-logos::after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 374px;
+        background-color: rgba(157, 157, 157, 1);
+        margin-top: 20px;
+    }
+
+    .footer-logos > div {
+        height: 50px;
+    }
+
+    .first-row > .footer-logos > div:last-child {
+        margin-top: 20px;
+    }
+
+    .footer-logos > div > img:last-child {
+        margin-left: 8.16px;
+        margin-bottom: 12.02px;
+    }
+
+    .second-row {
+        position: absolute;
+        width: 189px;
+        padding-top: 20px;
+        left: 19.5px;
+        bottom: 17px;
+    }
+
+    .second-row > span {
+        display: block;
+        text-wrap: nowrap;
+        height: 40px;
+    }
+}
+
+/* Iphone SE - 1 */
+@media (width <= 320px) {
+    .header-navigation > li {
+        display: none;
+    }
+
+    .header-navigation > .you-talk-logo {
+        display: block;
+    }
+
+    .breadcrumb {
+        margin-left: 16px;
+    }
+
+    footer {
+        position: relative;
+        padding: 35px 14px 90px 18px;
+        grid-template-rows: 184px 223px auto;
+    }
+
+    .first-row {
+        grid-template-columns: 182px 106px;
+    }
+
+    .first-row > section>div {
+        width: 288px;
+    }
+
+    footer > .first-row > section>form {
+        width: 288px;
+    }
+
+    section > form > button {
+        display: none;
+        width: 0px;
+    }
+
+    .footer-logos {
+        grid-row: 3;
+        text-wrap: nowrap;
+        margin-top: 0px;
+    }
+
+    .footer-logos::after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 288px;
+        background-color: rgba(157, 157, 157, 1);
+        margin-top: 20px;
+    }
+
+    .footer-logos > div {
+        height: 50px;
+    }
+
+    .first-row > .footer-logos > div:last-child {
+        margin-top: 20px;
+    }
+
+    .footer-logos > div > img:last-child {
+        margin-left: 8.16px;
+        margin-bottom: 12.02px;
+    }
+
+    .second-row {
+        position: absolute;
+        width: 189px;
+        padding-top: 20px;
+        left: 18px;
+        bottom: 17px;
+    }
+
+    .second-row>span {
+        display: block;
+        text-wrap: nowrap;
+        height: 40px;
+    }
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    box-shadow: inset 0px -1px rgba(239, 245, 251, 1);
+}
+
+.header-navigation > .you-talk-logo {
+    background-image: url(../../logos/youtalk.svg);
+    background-repeat: no-repeat;
+}
+
+.header-navigation > a {
+    font-family: 'montserrat-medium';
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    text-wrap: nowrap;
+    line-height: 114%;
+}
+
+.arrow-down > img {
+    width: 14px;
+    height: 14px;
+}
+
+.frame-pass-through {
+    background-color: rgba(227, 245, 245, 1);
+    border-radius: 4px;
+}
+
+.frame-pass-through > div {
+    display: inline-block;
+    font-family: 'montserrat-bold';
+    color: rgba(3, 178, 165, 1);
+    font-size: 16px;
+    line-height: auto;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+}
+
+.breadcrumb > li {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+.arrow-right {
+    background-image: url(../../logos/arrow_right.svg);
+    width: 16px;
+    height: 16px;
+    margin: 0px 8px 0px 4px;
+}
+
+footer {
+    display: grid;
+    background-color: rgba(41, 99, 163, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.first-row {
+    display: grid;
+}
+
+.first-row>ul>li {
+    font-family: 'montserrat-bold';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.first-row>section>div {
+    font-family: 'montserrat-bold';
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.first-row>section>form {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    width: 384px;
+    margin-bottom: 8px;
+}
+
+.first-row>section>form>input {
+    flex: 1;
+    font-family: 'montserrat-regular';
+    font-size: 14px;
+    line-height: 20px;
+    padding-block: 0px;
+    padding-inline: 0px;
+    padding: 0px;
+    padding-left: 16px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: rgba(157, 157, 157, 0.2);
+    border-width: 1px;
+}
+
+.first-row>section>form>button {
+    width: 64px;
+    border-radius: 0px 4px 4px 0px;
+    border-width: 0px;
+    background-color: rgba(22, 200, 187, 1);
+}
+
+.first-row>section>div:last-child {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-logos>div>img:last-child {
+    margin-left: 8.16px;
+    width: 112.75px;
+    height: 19.09px;
+}
+
+.footer-logos>div:last-child {
+    height: 32px;
+    margin-top: 40px;
+}
+
+.footer-logos>div:last-child>a {
+    margin-right: 16px;
+}
+
+.second-row>span {
+    margin-right: 48px;
+    font-family: 'montserrat-regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
