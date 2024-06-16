@@ -23,26 +23,40 @@
     src: url('../fonts/montserrat_italic.ttf');
 }
 
-@media (width <= 768px) {
-    header > nav > a:last-child::after {
+@media (width >= 414px) and (width <= 768px) {
+    .you-talk-logo::after {
         display: block;
         content: "";
-        position: absolute;
-        z-index: 1;
         background-image: url(../../logos/header_navigation_visible.svg);
-        background-image: ;
         width: 18px;
         height: 18px;
+        position: absolute;
+        right: 31px;
+        top: 29px;
+    }
+}
+
+@media (width <= 768px) {
+    nav {
+        position: relative;
+    }
+}
+
+@media (width >= 768px) {
+    .you-talk-logo {
+        width: 51px;
+        height: 36px;
     }
 }
 
 @media (width > 768px) {
-    .you-talk-logo {
-        height: 36px;
-    }
-
     .frame-pass-through {
+        display: flex;
         padding: 14px 20px;
+        height: 20px;
+        width: 190px;
+        justify-content: center;
+        align-items: center;
     }
 
     footer {
@@ -81,14 +95,6 @@
         padding: 14px 120px;
     }
 
-    .you-talk-logo {
-        width: 51px;
-    }
-
-    .frame-pass-through {
-        width: 190px;
-    }
-
     .breadcrumb {
         margin-top: 16px;
         margin-left: 126px;
@@ -108,14 +114,6 @@
     .header-navigation {
         gap: 16px;
         padding: 14px 32px;
-    }
-
-    .you-talk-logo {
-        width: 51px;
-    }
-
-    .frame-pass-through {
-        width: 230px;
     }
 
     .breadcrumb {
@@ -138,12 +136,8 @@
         right: 31px;
     }
 
-    .header-navigation > li {
-        display: none;
-    }
-
-    .header-navigation > .you-talk-logo {
-        display: block;
+    .header-navigation {
+        padding: 20px;
     }
 
     .breadcrumb {
@@ -185,12 +179,13 @@
 
 /* IPhone 11 Pro Max - 2 */
 @media (width <=414px) and (width > 320px) {
-    .header-navigation > li {
-        display: none;
+    .header-navigation {
+        padding: 19px 24px;
     }
 
-    .header-navigation > .you-talk-logo {
-        display: block;
+    .you-talk-logo {
+        width: 51px;
+        height: 36px;
     }
 
     .breadcrumb {
@@ -342,6 +337,10 @@ ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
     padding-inline-start: 0px;
+}
+
+footer > .first-row > ul {
+    list-style-type: none;
 }
 
 .header-navigation {

@@ -9,28 +9,23 @@
     <link rel="stylesheet" href="../styles/header-footer-style.css" />
     <link rel="stylesheet" href="../styles/second-page-style.css" />
     <script src="./assets/scripts/app.js"></script>
-    <style>
-        .new-element {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <nav class="header-navigation">
             <a class="you-talk-logo"></a>
-            <a>О нас</a>
-            <a>Тарифы</a>
-            <a>Для бизнеса</a>
-            <a>Психологам</a>
-            <a class="new-element">Сертификаты</a>
-            <a class="arrow-down">
+            <a class="hide-header">О нас</a>
+            <a class="hide-header">Тарифы</a>
+            <a class="hide-header">Для бизнеса</a>
+            <a class="hide-header">Психологам</a>
+            <a class="new-element hide-header">Сертификаты</a>
+            <a class="arrow-down hide-header">
                 Материалы
                 <img src="../../logos/arrow_down.svg">
             </a>
-            <a>FAQ</a>
-            <a class='frame-pass-through'>
+            <a class="hide-header">FAQ</a>
+            <a class='frame-pass-through hide-header'>
                 <span>Подобрать психолога</span>
             </a>
         </nav>
@@ -52,6 +47,7 @@
                     <p>Автор: Лиза Файнтух</p>
                     <p class="point">.</p>
                     <p>21.08.2021</p>
+                    <p class="point new-element">.</p>
                 </div>
             </div>
             <img src="../../images/swimming.jpg">
@@ -267,7 +263,7 @@
                     удобно выбрать дату,  время встречи и оплатить её
                 </p>
                 <button type="button" class="standard-button" id="more-info-top">
-                    Подробне
+                    Подробнее
                 </button>
             </div>
             <div class="card">
@@ -304,11 +300,11 @@
                     Подробнее
                 </button>
             </div>
-            <img src="../../logos/gift_care.svg">
+            <div class="logo-care"></div>
             <div>
                 <p><span>8</span> Видео сессий</p>
                 <p>
-                    Проработать небольшие проблемы с продвинуться в решении 
+                    Проработать небольшие проблемы и продвинуться в решении 
                     сложных запросов
                 </p>
                 <p>18 500 р</p>

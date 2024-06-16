@@ -18,7 +18,31 @@
     src: url('../fonts/montserrat_semibold.ttf');
 }
 
+@media (width > 414px) {
+    h1 {
+        font-family: 'montserrat-bold';
+        font-size: 48px;
+        line-height: 56px;
+        margin-block-start: 0em;
+        margin-block-end: 16px;
+    }
+
+    .background-color-bulb > img {
+        left: 225.5px;
+        width: 240px;
+        height: 168px;
+    }
+
+    .background-color-bulb {
+        padding: 24px 104px 48px 102px;
+    }
+}
+
 @media (width > 768px) {
+    main {
+        grid-template-areas: 'main aside' 'bottom bottom' 'gradient gradient';
+    }
+
     .border + div > ul > li {
         font-family: 'montserrat-regular';
         font-size: 14px;
@@ -53,6 +77,17 @@
 
     .arrow-down {
         width: 109px;
+    }
+
+    .this-hands-img {
+        display: grid;
+        grid-template-columns: 281px 386px;
+        grid-template-rows: 174px;
+        gap: 24px;
+    }
+
+    aside {
+        grid-template-columns: 100%;
     }
 }
 
@@ -126,7 +161,6 @@
     .card > div:first-child + div > img {
         width: 120px;
         height: 120px;
-        margin-left: 65px;
     }
 
     .border + div {
@@ -158,7 +192,7 @@
 }
 
 /* iPad Pro 12.9" - 3 */
-@media (width <= 1024px) {
+@media (width <=1024px) and (width > 768px) {
     body {
         width: 1024px;
         grid-template-rows: 76px 88px 4910px 302px;
@@ -220,7 +254,6 @@
     .card > div:first-child + div > img {
         width: 120px;
         height: 120px;
-        margin-left: 27px;
     }
 
     .card > div:first-child + div + div > p {
@@ -247,6 +280,410 @@
     }
 }
 
+/* iPad mini - 4 */
+@media (width <= 768px) and (width > 414px) {
+    body {
+        width: 768px;
+        grid-template-rows: 76px 88px 5452px 454px;
+    }
+
+    main {
+        grid-template-areas: 'main' 'bottom' 'aside';
+        grid-template-columns: 728px;
+        margin-left: 20px;
+    }
+
+    .hide-header {
+        display: none;
+    }
+
+    .hide-element {
+        display: none !important;
+        width: 0px;
+        height: 0px;
+    }
+
+    .breadcrumb {
+        margin-top: 16px;
+    }
+
+    .main-text {
+        grid-template-rows: repeat(21, minmax(auto, 1fr));
+        max-height: 4634px;
+        row-gap: 24px;
+    }
+
+    .main-text > div > div > .new-element {
+        display: block;
+    }
+
+    .main-text > div:first-child > div::after {
+        content: "Self";
+        display: inline-block;
+        width: min-content;
+        height: auto;
+        color: rgba(41, 99, 163, 1);
+        align-self: center;
+        font-family: 'montserrat-medium';
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main-text > div > div {
+        column-gap: 8px;
+    }
+
+    .main-text > img:first-of-type {
+        height: 331px;
+    }
+
+    .this-underline > ul {
+        font-family: 'montserrat-medium';
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .this-underline > ul > li:first-child {
+        margin-bottom: 8px;
+    }
+
+    .background-color-F3F7FE + div > ul {
+        margin-left: 20px;
+    }
+
+    .background-color-bulb > p {
+        width: 485px;
+    }
+
+    .background-color-bulb + p + div {
+        display: grid;
+        grid-template-columns: 282px 385px;
+        grid-template-rows: 380px;
+        gap: 24px;
+    }
+
+    .background-color-FEFAEC + div > ul {
+        margin-left: 20px;
+        font-family: 'montserrat-medium';
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .background-color-FEFAEC + div > ul > li:first-child {
+        margin-bottom: 16px;
+    }
+
+    .this-hands-img > img {
+        height: 182px;
+        width: 294px;
+    }
+
+    .this-hands-img {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+
+    .background-color-FFF3EB > h4 {
+        margin-bottom: 8px;
+    }
+
+    .main-two-columns + div {
+        text-align: center;
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: repeat(2, 356px);
+        grid-template-rows: 481px 242px;
+        column-gap: 16px;
+        row-gap: 36px;
+    }
+
+    aside > .background-color-E6F0FD {
+        padding: 22.55px 23px 14.45px 23px;
+    }
+
+    .background-color-E6F0FD > img {
+        width: 257px;
+        height: 206px;
+    }
+
+    .background-color-E6F0FD > img + P {
+        margin-top: 24px;
+        font-family: 'montserrat-bold';
+        font-size: 18px;
+        width: 290px;
+    }
+
+    #more-info-top {
+        margin-top: 24px;
+        width: 310px;
+        height: 48px;
+    }
+
+    aside > .card {
+        position: relative;
+        padding: 24px 24px 17px 24px;
+    }
+
+    .card > div:first-child > p {
+        background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    }
+
+    .card > div:first-child + div > img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 16px;
+    }
+
+    .card > div:first-child + div + div {
+        margin-top: 4px;
+    }
+
+    .card > div:first-child + div + div > p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .card > div:first-child + div + div > .point {
+        line-height: 80%;
+    }
+
+    .border + div > ul > li {
+        font-family: 'montserrat-regular';
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    #more-info-middle {
+        margin-top: 12px;
+        width: 250px;
+        height: 48px;
+    }
+
+    .card + img + div {
+        padding: 32px;
+    }
+
+    aside > div:last-child {
+        padding: 24px 42.93px 4px 21.47px;
+    }
+
+    aside > img {
+        width: 356px;
+    }
+}
+
+/* iPhone 11 Pro Max - 4 */
+@media (width <= 414px) and (width > 320px) {
+    body {
+        width: 414px;
+        grid-template-rows: 72px 66px 8397px 746px;
+    }
+
+    main {
+        grid-template-areas: 'main' 'bottom' 'aside';
+        grid-template-columns: 374px;
+        margin-left: 20px;
+    }
+
+    h1 {
+        font-family: 'montserrat-bold';
+        font-size: 32px;
+        line-height: 40px;
+        margin-block-start: 0em;
+        margin-block-end: 16px;
+    }
+
+    .hide-header {
+        display: none;
+    }
+
+    .hide-element {
+        display: none !important;
+        width: 0px;
+        height: 0px;
+    }
+
+    .breadcrumb {
+        width: 374px;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 16px;
+    }
+
+    .main-text {
+        grid-template-rows: repeat(21, minmax(auto, 1fr));
+        max-height: 4634px;
+        row-gap: 24px;
+    }
+
+    .main-text > div > div > .new-element {
+        display: block;
+    }
+
+    .main-text > div:first-child > div::after {
+        content: "Self";
+        display: inline-block;
+        width: min-content;
+        height: auto;
+        color: rgba(41, 99, 163, 1);
+        align-self: center;
+        font-family: 'montserrat-medium';
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main-text > div > div {
+        column-gap: 8px;
+    }
+
+    .main-text > img:first-of-type {
+        height: 331px;
+    }
+
+    .this-underline > ul {
+        font-family: 'montserrat-medium';
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .this-underline > ul > li:first-child {
+        margin-bottom: 8px;
+    }
+
+    .background-color-F3F7FE + div > ul {
+        margin-left: 20px;
+    }
+
+    .background-color-bulb > p {
+        width: 485px;
+    }
+
+    .background-color-bulb + p + div {
+        display: grid;
+        grid-template-columns: 282px 385px;
+        grid-template-rows: 380px;
+        gap: 24px;
+    }
+
+    .background-color-FEFAEC + div > ul {
+        margin-left: 20px;
+        font-family: 'montserrat-medium';
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .background-color-FEFAEC + div > ul > li:first-child {
+        margin-bottom: 16px;
+    }
+
+    .this-hands-img > img {
+        height: 182px;
+        width: 294px;
+    }
+
+    .this-hands-img {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+
+    .background-color-FFF3EB > h4 {
+        margin-bottom: 8px;
+    }
+
+    .main-two-columns + div {
+        text-align: center;
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: 374px;
+        grid-template-rows: 512px 481px 292px 248px;
+        column-gap: 16px;
+        row-gap: 36px;
+    }
+
+    aside > .background-color-E6F0FD {
+        padding: 22.55px 23px 14.45px 23px;
+    }
+
+    .background-color-E6F0FD > img {
+        width: 257px;
+        height: 206px;
+    }
+
+    .background-color-E6F0FD > img + P {
+        margin-top: 24px;
+        font-family: 'montserrat-bold';
+        font-size: 18px;
+        width: 290px;
+    }
+
+    #more-info-top {
+        margin-top: 24px;
+        width: 310px;
+        height: 48px;
+    }
+
+    aside > .card {
+        position: relative;
+        padding: 24px 24px 17px 24px;
+    }
+
+    .card > div:first-child > p {
+        background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    }
+
+    .card > div:first-child + div > img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 16px;
+    }
+
+    .card > div:first-child + div + div {
+        margin-top: 4px;
+    }
+
+    .card > div:first-child + div + div > p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .card > div:first-child + div + div > .point {
+        line-height: 80%;
+    }
+
+    .border + div > ul > li {
+        font-family: 'montserrat-regular';
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    #more-info-middle {
+        margin-top: 12px;
+        width: 250px;
+        height: 48px;
+    }
+
+    .card + img + div {
+        padding: 32px;
+    }
+
+    aside > div:last-child {
+        padding: 24px 42.93px 4px 21.47px;
+    }
+
+    aside > img {
+        width: 356px;
+    }
+}
+
 header {
     width: inherit;
 }
@@ -256,23 +693,18 @@ body {
     margin: 0px;
 }
 
+nav {
+    width: inherit;
+}
+
 main {
     display: grid;
     position: relative;
-    grid-template-areas: 'main aside' 'bottom bottom' 'gradient gradient';
     width: inherit;
 }
 
 aside {
     grid-area: aside;
-}
-
-h1 {
-    font-family: 'montserrat-bold';
-    font-size: 48px;
-    line-height: 56px;
-    margin-block-start: 0em;
-    margin-block-end: 16px;
 }
 
 h3 {
@@ -308,6 +740,14 @@ p {
 
 footer {
     margin-bottom: 0px;
+}
+
+button {
+    font-size: 1rem;
+}
+
+.new-element {
+    display: none;
 }
 
 .main-text {
@@ -402,41 +842,29 @@ div > ul > li::marker {
     font-family: 'montserrat-medium';
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 16px;
 }
 
-.background-color-F3F7FE + div > ul + img {
-    margin-top: 8px;
+.background-color-F3F7FE + div + div > img {
     width: 100%;
     margin-bottom: 16px;
 }
 
-.background-color-F3F7FE + div > ul + img + p {
+.background-color-F3F7FE + div + div > img + p {
     color: rgba(134, 134, 134, 1);
     font-size: 14px;
     line-height: 130%;
     letter-spacing: 0.25px;
 }
 
-.background-color-F3F7FE + div > ul + img + p + p {
-    font-family: 'montserrat-medium';
-    font-size: 16px;
-    line-height: 24px;
-}
-
 .background-color-bulb {
     position: relative;
-    padding: 24px 104px 48px 102px;
 }
 
 .background-color-bulb > img {
     position: absolute;
     z-index: -1;
-    left: 225.5px;
     top: 0px;
     bottom: 0px;
-    width: 240px;
-    height: 168px;
 }
 
 .background-color-bulb > p {
@@ -444,13 +872,6 @@ div > ul > li::marker {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 72px;
-}
-
-.background-color-bulb + p {
-    font-family: 'montserrat-medium';
-    font-size: 16px;
-    line-height: 24px;
 }
 
 .background-color-bulb + p + div {
@@ -469,16 +890,6 @@ div > ul > li::marker {
 
 .background-color-FEFAEC + h3 + ul {
     width: 572px;
-}
-
-.this-hands-img {
-    display: grid;
-    grid-template-columns: 281px 386px;
-    grid-template-rows: 174px;
-    gap: 24px;
-}
-
-.this-hands-img + p {
 }
 
 .background-color-FFF3EB {
@@ -574,17 +985,12 @@ div > ul > li::marker {
        40px применяет закругление только к верхним углам. */
 }
 
-aside {
-    grid-template-columns: 100%;
-}
-
 aside > .background-color-E6F0FD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #E6F0FD;
     border-radius: 16px;
-}
-
-.background-color-E6F0FD > img {
-    width: 100%;
 }
 
 .background-color-E6F0FD > p {
@@ -602,6 +1008,9 @@ aside > .background-color-E6F0FD {
 }
 
 aside > .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     border: 1px solid rgba(222, 222, 222, 1);
     border-radius: 16px;
@@ -627,10 +1036,6 @@ aside > .card {
     padding-top: 3px;
 }
 
-.card > div:first-child > p + p {
-    width: 74px;
-}
-
 .card > div:first-child + div > img {
     border: 1px solid rgb(46, 191, 128);
     border-radius: 50%;
@@ -639,25 +1044,19 @@ aside > .card {
 .card > div:first-child + div > p {
     text-align: center;
     font-family: 'montserrat-bold';
-    font-size: 20px;
-    line-height: 28px;
 }
 
 .card > div:first-child + div > p + p {
     font-family: 'montserrat-semibold';
-    font-size: 16px;
-    line-height: 24px;
 }
 
 .card > div:first-child + div + div {
     display: flex;
     flex-direction: row;
     text-wrap: nowrap;
-    justify-content: space-between;
     font-family: 'montserrat-medium';
     font-size: 14px;
     color: rgba(162, 167, 177, 1);
-    justify-content: center;
 }
 
 .card > div:first-child + div + div > p {
@@ -674,8 +1073,6 @@ aside > .card {
 
 .border + div > p {
     font-family: 'montserrat-bold';
-    font-size: 16px;
-    line-height: 24px;
     margin-bottom: 8px;
 }
 
@@ -684,7 +1081,6 @@ aside > .card {
 }
 
 aside > img {
-    width: 100%;
     height: 100%;
 }
 
@@ -700,7 +1096,6 @@ aside > div:last-child > p:first-child > span {
     font-family: 'montserrat-bold';
     font-size: 24px;
     line-height: 32px;
-    margin-right: 4px;
 }
 
 aside > div:last-child > p:first-child {
@@ -708,7 +1103,7 @@ aside > div:last-child > p:first-child {
     font-family: 'montserrat-bold';
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 aside > div:last-child > p:first-child + p {
@@ -735,4 +1130,8 @@ aside > div:last-child > img {
     right: 0px;
     bottom: 0px;
     border-radius: 24px;
+}
+
+.logo-care {
+    background-image: url(../../logos/logo_care.svg);
 }
