@@ -133,6 +133,10 @@
         padding: 14px 0px;
     }
 
+    .arrow-down + a {
+        margin-right: 16px;
+    }
+
     .breadcrumb {
         margin-left: 32px;
     }

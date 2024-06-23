@@ -167,7 +167,7 @@
     }
 
     .arrow-down + a {
-        margin-right: 256px;
+        margin-right: 120px;
     }
 
     .background-color-FEFAEC + div > ul {
@@ -1161,10 +1161,6 @@ li {
 
 ul > li:last-child {
     margin-bottom: 0px;
-}
-
-.new-element {
-    display: none;
 }
 
 .main-text {
