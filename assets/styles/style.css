@@ -37,6 +37,10 @@
 }
 
 @media (width > 768px) {
+  .image-running {
+    background-image: url(../../images/running.png);
+  }
+
   .big-images {
     grid-template-columns: repeat(2, auto);
   }
@@ -81,6 +85,12 @@
   .second-row {
     margin-top: 16px;
     margin-left: 8px;
+  }
+}
+
+@media (width <= 1024px) {
+  .background-gradient {
+    display: none;
   }
 }
 
@@ -144,10 +154,6 @@
     background-image: url(../../images/eggs_1024.png);
   }
 
-  .background-gradient {
-    display: none;
-  }
-
   .medium-images {
     grid-template-rows: repeat(2, 458px);
   }
@@ -188,10 +194,6 @@
 
   .image-running {
     background-image: url(../../images/running_768.png);
-  }
-
-  .background-gradient {
-    display: none;
   }
 
   .big-images {
@@ -238,10 +240,6 @@
 
   .image-eggs {
     background-image: url(../../images/eggs_414.png);
-  }
-
-  .background-gradient {
-    display: none;
   }
 
   .big-images {
@@ -295,10 +293,6 @@
     overflow: hidden;
   }
 
-  .background-gradient {
-    display: none;
-  }
-
   .big-images {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, 484px);
@@ -350,7 +344,7 @@ body {
 }
 
 main {
-  position: relative;;
+  position: relative;
 }
 
 a {
@@ -547,16 +541,17 @@ ul > .this-unicorn {
   border-radius: 0px 0px 16px 16px;
   padding: 15px;
   flex: 1;
+  background-color: white;
 }
 
 .background-gradient {
   z-index: -1;
   position: absolute;
-  background: linear-gradient(rgba(239, 245, 251, 1), rgba(255, 255, 255, 1));
   width: 1440px;
   height: 672px;
   top: 401px;
-  left: 0px;
+  left: -120px;
+  background: linear-gradient(rgba(239, 245, 251, 0.6), rgba(255, 255, 255, 0.6));
   border-radius: 220% / 5% 40px 0 0;
   /* 220% означает сильное горизонтальное растяжение кривой,
      5% управляет вертикальным растяжением верхней стороны,
