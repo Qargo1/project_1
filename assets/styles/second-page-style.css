@@ -209,7 +209,6 @@
     }
 
     .card > div:first-child + div > img {
-        margin-left: 65px;
         width: 120px;
         height: 120px;
     }
@@ -258,6 +257,7 @@
     }
 
     .first-gift {
+        bottom: 0px;
         right: 10px;
     }
 
@@ -265,7 +265,7 @@
         height: 121px;
         width: 137px;
         background-repeat: no-repeat;
-        bottom: -48px;
+        bottom: -49px;
         right: -48px;
     }
 }
@@ -283,7 +283,7 @@
         margin-left: 32px;
     }
 
-    .new-element {
+    .header-navigation > .new-element {
         display: block;
     }
 
