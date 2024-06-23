@@ -111,6 +111,10 @@
         margin-right: 21px;
     }
 
+    .arrow-down + a {
+        margin-right: 120px;
+    }
+
     .breadcrumb {
         margin-top: 16px;
         margin-left: 126px;

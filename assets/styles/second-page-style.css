@@ -166,10 +166,6 @@
         width: 238px;
     }
 
-    .arrow-down + a {
-        margin-right: 120px;
-    }
-
     .background-color-FEFAEC + div > ul {
         width: 572px;
         margin-left: 32px;
