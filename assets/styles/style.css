@@ -130,6 +130,11 @@
   .first-row {
     grid-template-columns: 204px 197.5px 577.5px 221px;
   }
+
+  #more-info-button {
+    margin-left: 509px;
+    margin-top: 56px;
+  }
 }
 
 /* iPad Pro 12.9 - 1 */
@@ -168,6 +173,11 @@
 
   .first-row {
     grid-template-columns: 141px 127px 471px 221px;
+  }
+
+  #more-info-button {
+    margin-left: 389px;
+    margin-top: 35px;
   }
 }
 
@@ -215,6 +225,11 @@
 
   .medium-images > .flex-container > img {
     height: 206px;
+  }
+
+  #more-info-button {
+    margin-left: 277px;
+    margin-top: 33px;
   }
 }
 
