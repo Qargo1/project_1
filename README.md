@@ -1,3 +1,3 @@
 ## README:
 
-[**Страница с развернутой версткой**](https://monster-killer-starting-project.vercel.app/)
+[**Страница с развернутой версткой**](https://vercel.com/qargos-projects/project-1)
